@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Temaki Sushi</title>
+    <style>
+      body{
+        background-color: #fbece3
+      }
+      .container{
+        position: relative;
+        margin-left:0;
+        margin-top:0;
+        width:100%;
+        height:100%
+      }  
+      
+      
+      .textbox{
+        color: #67b99f;
+        font-family: "Segoe UI";
+				text-align: center;
+        padding: 20px;
+        position: relative;
+        margin-top: 1%;
+        margin-left: 2%;
+        border: 8px #67b99f solid;
+        width: 40%
+        
+      }
+      .sushi-roll{
+        width:500px;
+        height:500px;
+        position: absolute;
+        margin-left: 30%;
+        margin-top: 20%
+      }
+      
+          .seaweed{
+            background: #7a7b75;
+            width: 100%;
+            height: 80%;
+            position: absolute;
+            border-radius: 46% 47% 63% 41% / 43% 55% 45% 57%; 
+            border: 8px #685f59 solid;
+          }
+
+          .rice{
+            background: #fdfffe;
+            position: absolute;
+            z-index:1;
+            width: 400px;
+            height: 360px;
+            margin-top: 20px;
+            margin-left: 20px;
+          }
+
+          .topping{
+            border: 8px #685f59 solid;     
+          }
+          .cucumber-stick{
+            background: #67b99f;
+            position: absolute;
+            z-index:2;
+            width: 100px;
+            height: 100px;
+            margin-top: 200px;
+            margin-left: 210px;
+            border-radius: 44% 44% 50% 56% / 37% 47% 62% 38%  
+          }
+
+          .crab{
+            background: #f7a87a;
+            position: absolute;
+            z-index:3;
+            width: 100px;
+            height: 100px;
+            margin-top: 200px;
+            margin-left: 110px;
+            border-radius: 44% 44% 50% 56% / 37% 47% 62% 38%  
+          }
+
+          .tamago{
+            background: #e8dd9f;
+            position: absolute;
+            z-index:3;
+            width: 110px;
+            height: 90px;
+            margin-top: 120px;
+            margin-left: 150px;
+            border-radius: 44% 44% 50% 43% / 37% 47% 62% 38% 
+          }
+
+          .ikura{
+            background: #ec6f5d;
+            position: absolute;
+            z-index:4;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%
+          }
+
+          .ikura1{
+            margin-top: -20px;
+            margin-left: 165px;
+          }
+
+          .ikura2{
+            margin-top: -20px;
+            margin-left:215px;
+          }
+
+          .ikura3{
+            margin-top: -65px;
+            margin-left:190px;
+          }
+      
+      .boxes{
+        position: absolute;
+        width: 100%;
+        height: 10%;
+        margin-top: auto;
+        margin-bottom: auto
+      }
+      
+          .cucumber-box1{
+            position: absolute;
+            margin-left: 55%;
+            margin-top: 5%;
+            width: 400px;
+            height: 400px;
+            background: #67b99f;
+            padding: 20px
+          }
+
+          .cucumber-box-overlay{
+            width: 100%;
+            height: 100%;
+            font-family: "Segoe UI";
+            text-align: center;
+            opacity: 0;
+            transform: translateY(-20px);
+            transition-duration: 0.25s
+          }
+
+          .cucumber-box-overlay:hover{
+            opacity: 1;
+            transform: translateY(0);
+          }
+      
+      
+          .crab-box1{
+            position: absolute;
+            margin-top: 150px;
+            margin-left: 180px;
+            width: 350px;
+            height: 350px;
+            background: #f7a87a;
+            padding: 20px
+          }
+
+          .crab-box-overlay{
+            width: 100%;
+            height: 100%;
+            font-family: "Segoe UI";
+            text-align: center;
+            opacity: 0;
+            transform: translateY(-20px);
+            transition-duration: 0.25s
+          }
+
+          .crab-box-overlay:hover{
+            opacity: 1;
+            transform: translateY(0)
+          }
+      
+      
+      		.tamago-box1{
+            position: absolute;
+            background: #e8dd9f;
+            margin-top: 700px;
+            margin-left: 250px;
+            width: 400px;
+            height: 400px;
+            padding: 20px
+          }
+
+          .tamago-box-overlay{
+            width: 100%;
+            height: 100%;
+            font-family: "Segoe UI";
+            text-align: center;
+            opacity: 0;
+            transform: translateY(-20px);
+            transition-duration: 0.25s
+          }
+
+          .tamago-box-overlay:hover{
+            opacity: 1;
+            transform: translateY(0)
+          }
+
+			    .ikura-box1{
+            position: absolute;
+            background: #ec6f5d;
+            margin-top: 600px;
+            margin-left: 950px;
+            width: 300px;
+            height: 300px;
+            padding: 20px;
+          }
+
+          .ikura-box-overlay{
+            width: 100%;
+            height: 100%;
+            font-family: "Segoe UI";
+            text-align: center;
+            opacity: 0;
+            transform: translateY(-20px);
+            transition-duration: 0.25s
+          }
+
+          .ikura-box-overlay:hover{
+            opacity: 1;
+            transform: translateY(0);
+          }
+      
+      
+
+      
+      
+      
+
+
+  </style>
+  </head>
+  
+  
+  <body>
+    <div class="container">
+
+    <div class="textbox">
+      <h1>
+      ANATOMY OF TEMAKI
+    	</h1>
+    </div> 
+    
+    
+    
+    
+    
+    <div class="boxes">
+      
+      <div class="cucumber-box1">
+        <div class="cucumber-box-overlay">
+          <h2 class="cucumber-box-title">CUCUMBER</h2>
+          <p class="cucumber-box-text">
+          	Cucumber is what I consider a "cool" food - this means that when my body is heating up
+          	or when it's really hot outside, cucumber is a great way to resolve that heat. Other cool 
+            foods include tomatoes, watermelon, crabs, soft cheeses, seaweed, peppermint etc. 
+          </p>
+          <p>
+            There are also hot foods, that have a reverse effect and include egg yolk, ginger, garlic,
+            coffee, lychee, and deep fried foods.
+          </p>
+          <p>
+            To be very honest, I never knew the reasoning behind the classification, just that I knew
+            which foods fell into which category and it became intuition on when I would eat them.
+          </p>
+        </div>
+      </div>
+
+      <div class="crab-box1">
+        <div class="crab-box-overlay">
+          <h2 class="crab-box-title">CRAB</h2>
+          <p class="crab-box-text">
+            While in sushi it is usually imitation crab, my favourite type of crab is "Chinese Mitten Crab", 
+            or 大閘蟹. The best time to eat it is from October to December but after coming to college,
+            I haven't had a chance to eat any :(
+          </p>
+          <p>
+            I actually still don't know what is in imitation crab, only that I really like eating 
+            it. It's kind of like those foods like fish cake or spam where you don't really know
+            what it is but it's still very much part of the foods you eat regularly.
+          </p>
+        </div>
+      </div>
+      
+      <div class="tamago-box1">
+        <div class="tamago-box-overlay">
+          <h2 class="tamago-box-title">TAMAGO</h2>
+          <p class="tamago-box-text">
+          It's on my Amazon wishlist but there's a special type of pan for making Tamagoyaki,
+          which is the type of egg you find on sushi. 
+          </p>
+          <p>
+          It's amazing the number of ways that you could eat or make egg and I want to be able
+        	to try as many variations of the egg dish as possible. Most of what I've had are
+          ones that I can make at home or ones in Chinese or Japanese cuisine. 
+          </p>
+          <p>
+          I think even with the specific ways (i.e. scrambled eggs) there is still so much
+          variation. For example I like making mine with a little bit of milk and, let it be
+          a bit runny but my friend only likes it with pure eggs. 
+          </p>
+        </div>
+      </div>
+      
+    	<div class="ikura-box1">
+        <div class="ikura-box-overlay">
+          <h2 class="ikura-box-title">IKURA</h2>
+          <p class="ikura-box-text">
+          I've never had popping boba before coming to America but it kinda reminds me of ikura.  
+          </p>
+          <p>
+          I think that it's the texture that makes this such a polarising food because you
+          bite into it and it just bursts in your mouth and if you're not a fan of the 
+          "fishy" flavour, you're probably not going to have a good time.
+          </p>
+        </div>
+      </div>
+        
+    </div>
+    
+    
+    
+    
+  
+    <div class="sushi-roll">
+      <div class="seaweed">
+      </div>
+      <div class="seaweed rice">
+      </div>
+      <div class="topping cucumber-stick"> 
+      </div>
+      <div class="topping crab"> 
+      </div>
+      <div class="topping tamago"> 
+      </div>
+      <div class="topping ikura ikura1"> 
+      </div>
+      <div class="topping ikura ikura2"> 
+      </div>
+      <div class="topping ikura ikura3"> 
+      </div>
+    </div>
+    
+    
+    
+  </div>  
+    
+  </body>
+  
+  
+
+</html>
+  
+  
